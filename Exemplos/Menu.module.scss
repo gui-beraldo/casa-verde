@@ -1,0 +1,29 @@
+.menu {
+
+  &__lista {
+    display: flex;
+    margin: 0;
+
+    li {
+      list-style: none ;
+
+      + li:before {
+        content: "/";
+        font-weight: 600;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  &__item {
+    color: $preto;
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
