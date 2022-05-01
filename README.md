@@ -1,6 +1,8 @@
 # Casa Verde
 ### _Projeto realizado para o desafio [React: 7daysOfCode](https://7daysofcode.io/)_
 
+Visualize [clicando aqui](https://casaverde.vercel.app)
+
 ## O que é o desafio?
 
 Segundo eles:
