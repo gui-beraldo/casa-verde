@@ -1,4 +1,5 @@
 import { Newsletter } from 'components/Newsletter';
+import { Tutorial } from 'components/Tutorial';
 import styled from 'styled-components';
 import { size } from 'styles/sizes';
 
@@ -13,6 +14,7 @@ export function Home() {
 		<main>
 			<Div>
 				<Newsletter />
+				<Tutorial />
 			</Div>
 		</main>
 	);

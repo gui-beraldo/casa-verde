@@ -14,10 +14,25 @@ export const Title = styled.h1`
 	@media ${device.mobileS} {
 		font-size: 5.125rem;
 		line-height: 6rem;
-		font-weight: 900;
 		margin-bottom: 1.5rem;
 	}
 `;
+
+export const Title2 = styled.h2`
+	font-size: 2rem;
+	line-height: 2.25rem;
+
+	span {
+		display: block;
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+	
+	@media ${device.mobileS} {
+		font-size: 2.625rem;
+		line-height: 2.625rem;
+	}
+`
 
 export const Subtitle = styled.span`
 	font-family: 'Montserrat', sans-serif;
