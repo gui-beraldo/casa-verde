@@ -15,7 +15,8 @@ const StyledHeader = styled.header`
 		justify-content: center;
 
 		div {
-			max-width: ${size.tabletM};	
+			box-sizing: border-box;
+			max-width: ${size.laptopL};	
 		}
 
 		button {

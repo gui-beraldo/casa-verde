@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
       background-image: url('/images/body-shape.svg'), url('/images/bg2.jpg');
         background-repeat: no-repeat, repeat-y;
         background-position: right top, center;
-        background-size: 70%, 100vmax;
+        background-size: clamp(200px, 70%, 1200px), 100vmax;
     }
   }
 

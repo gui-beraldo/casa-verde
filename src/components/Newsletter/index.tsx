@@ -4,25 +4,23 @@ import styled from 'styled-components';
 import { device } from 'styles/sizes';
 
 const NewsletterSection = styled.section`
-	margin: 0 1rem;
 	display: flex;
 	align-items: center;
-	padding-top: 3rem;
 
 	background: url('./images/hero-image.png');
 	background-repeat: no-repeat;
-	background-position: right -20px bottom 168px;
-	background-size: 75%;
+	background-position: right -20px bottom 155px;
+	background-size: clamp(180px, 75%, 300px);
 
 	@media ${device.mobileS} {
-		background-size: 80vh;
-		background-position: bottom right;
+		background-size: clamp(200px, 80vh, calc(100vh - 145px));
+		background-position: right -20px bottom 0px;
 		justify-content: flex-start;
 
 		min-height: calc(100vh - 90px);
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 `;
 

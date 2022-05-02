@@ -1,10 +1,10 @@
 import { Newsletter } from 'components/Newsletter';
 import styled from 'styled-components';
+import { size } from 'styles/sizes';
 
 const Div = styled.section`
-	max-width: ${({ theme }) => {
-		return theme.spacing.large;
-	}};
+	box-sizing: content-box;
+	max-width: ${size.laptopL};
 	margin: 0 auto;
 `;
 

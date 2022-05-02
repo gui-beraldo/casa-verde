@@ -11,7 +11,7 @@ const theme = {
 		highlight: '#FFCB47',
 	},
 	spacing: {
-		large: '920px',
+		large: '1080px',
 	},
 	fonts: {
 		title: "'Montserrat', sans-serif",
