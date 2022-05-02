@@ -5,6 +5,8 @@ import { Menu } from './Menu';
 import { device, size } from 'styles/sizes';
 
 const StyledHeader = styled.header`
+	box-sizing: border-box;
+	
 	height: 90px;
 	width: 100vw;
 	display: flex;

@@ -38,6 +38,7 @@ export const Input = styled.input`
 		return theme.colors.tertiary;
 	}};
 	border: none;
+	border-radius: 0;
 
 	&::placeholder {
 		color: ${({ theme }) => {

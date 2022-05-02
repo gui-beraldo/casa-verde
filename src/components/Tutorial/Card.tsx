@@ -1,10 +1,10 @@
 import { Subtitle, Title2 } from 'components/Typography';
 import styled from 'styled-components';
-import  { device } from 'styles/sizes';
+import { device } from 'styles/sizes';
 
 const Wrapper = styled.section`
 	min-width: 100%;
-	padding: 2rem;
+	padding: 2rem 1rem;
 
 	display: flex;
 	align-items: center;
@@ -13,10 +13,35 @@ const Wrapper = styled.section`
 	@media (min-width: 410px) {
 		min-width: 410px;
 	}
+
+	@media ${device.mobileS} {
+		padding: 2rem 2rem;
+	}
+
+	div {
+		width: 100%;
+	}
+`;
+
+const Title = styled(Title2)`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	span {
+		display: inherit;
+		flex-direction: inherit;
+		align-items: inherit;
+	}
+
+	@media ${device.mobileS} {
+		display: block;
+	}
 `;
 
 const ListaItem = styled.ul`
-	padding-top: 2rem;
+	padding-top: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -26,15 +51,15 @@ const Item = styled.li`
 	display: flex;
 	align-items: center;
 
-	margin-bottom: 1rem;
+	margin-top: 1rem;
 
 	p {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		color: ${({ theme }) => {
 			return theme.colors.secondary;
 		}};
 
-		@media(${device.mobileS}) {
+		@media ${device.mobileS} {
 			font-size: 1.375rem;
 		}
 	}
@@ -71,9 +96,9 @@ export function Card() {
 	return (
 		<Wrapper>
 			<div>
-				<Title2>
+				<Title>
 					<Subtitle>Como conseguir</Subtitle>minha planta
-				</Title2>
+				</Title>
 				<ListaItem>
 					<Item>
 						<ItemIcone></ItemIcone>

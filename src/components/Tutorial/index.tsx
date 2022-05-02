@@ -3,7 +3,7 @@ import { Card } from './Card';
 
 const Wrapper = styled.section`
 	max-width: 995px;
-  height: 440px;
+	height: 440px;
 	margin: 0 auto;
 	background-color: ${({ theme }) => {
 		return theme.colors.tertiary;
@@ -13,12 +13,12 @@ const Wrapper = styled.section`
 `;
 
 const Background = styled.div`
-  width: 585px;
+	width: 585px;
 
-  background-image: url('images/image-tutorial.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-`
+	background-image: url('images/image-tutorial.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+`;
 
 export function Tutorial() {
 	return (

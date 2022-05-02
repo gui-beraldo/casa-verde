@@ -4,13 +4,15 @@ import styled from 'styled-components';
 import { device } from 'styles/sizes';
 
 const NewsletterSection = styled.section`
+	margin-bottom: 40px;
+
 	display: flex;
 	align-items: center;
 
 	background: url('./images/hero-image.png');
 	background-repeat: no-repeat;
 	background-position: right -20px bottom 155px;
-	background-size: clamp(180px, 75%, 300px);
+	background-size: clamp(180px, 75%, 280px);
 
 	@media ${device.mobileS} {
 		background-size: clamp(200px, 80vh, calc(100vh - 145px));
@@ -21,6 +23,8 @@ const NewsletterSection = styled.section`
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+
+		margin-bottom:0px;
 	}
 `;
 
@@ -43,8 +47,7 @@ const TextNewsletter = styled(Text)`
 const FormNewsletter = styled.form`
 	width: 100%;
 	display: flex-box;
-	margin-top: 2rem;
-	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+	margin-top: 3rem;
 
 	button {
 		box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
@@ -54,6 +57,7 @@ const FormNewsletter = styled.form`
 
 	@media ${device.mobileS} {
 		display: flex;
+		box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
 
 		button {
 			width: auto;
